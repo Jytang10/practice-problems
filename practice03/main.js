@@ -5,14 +5,14 @@ function groupArray(sortArray){
     var finalArray = [];
 
     for(i=0;i<sortArray.length;i++){
-        switch(sortArray){
-            case (typeof sortArray[i] == 'number'):
+        switch(typeof sortArray[i]){
+            case ( 'number'):
                 numArray.push(sortArray[i]);
                 break;
-            case (typeof sortArray[i] == 'string'):
+            case ('string'):
                 strArray.push(sortArray[i]);
                 break;
-            case (typeof sortArray[i] == 'boolean'):
+            case ('boolean'):
                 booArray.push(sortArray[i]);
                 break;
             default:
