@@ -10,3 +10,10 @@ Build a function that takes in an array and reverses it
 	- `arrayReverse(myArray);`
 	- Output - `['23', 'what', 'Bob', 45, 'hello']`
 - Avoid using pre-built functions that do something similar
+
+*Pseudocode*
+- totalReverse function will take in 1 parameter (an array)
+- Create an empty array (resultArray) to store values
+- Iterate backwards through each value in the parameter array, starting from the last value of the array
+- For each iteration, add the value in the parameter array to the resultArray
+- Return the resultArray as the output
