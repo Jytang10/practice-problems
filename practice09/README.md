@@ -10,3 +10,15 @@ Build a function that takes in a string and an array of strings. The function sh
 	- `var myArray = ['cat','caterpillar','whale','accurate','smile','cactus','cute'];`
 	- `fittingWords('cat', myArray);`
 	- Output - `['cat','caterpillar','accurate','cactus']`
+
+*Notes*
+- Create empty array for return output array
+- Loop through and save all letters in Param 1
+- Loop through all strings in Param 2, then compare with the saved letters
+- If all saved letters are found, then add the string value to the answer array
+
+*Pseudocode*
+- Iterate through Param 1 string
+	- For each unique letter in Param 1 string (each iteration), check if each string in Param 2 array includes the letter
+	- If the string in Param 2 does not include the letter, remove the string from the array (filter and include methods)
+- Return the new filtered Param 2 array

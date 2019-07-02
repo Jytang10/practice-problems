@@ -8,7 +8,7 @@ Build a function that will translate text into "Pig Latin" Take the first conson
 	- Example: 
 		- `var myString = "Hello my name is Stu"`
 		- `translate(myString);
-		- Output - `"ellohay ymay ameya siay tusay"`
+		- Output - `"ellohay ymay amenay siay tusay"`
 
 #### Making it better!
 
@@ -18,3 +18,22 @@ Build a function that will translate text into "Pig Latin" Take the first conson
 - Also try maintaining capitalization of words that are capitalized in your input string.
 	- Example: 
 		- `"Hello there"` would be `"Ellohay heretay"`
+
+*Notes*
+- Perform actions on each individual word
+- Take and remove first letter from the word
+- Add to the end of the same word (shift method, push method?)
+- Add "ay" to the word
+- Repeat for all words
+
+*Pseudocode*
+- Create empty answer array to store Pig Latin words
+- Take given string parameter and find each individual word (using split method and split by spaces)
+- Iterate through each word in the new array of words (use for loop)
+- For each iteration
+	- Slice the word, slicing between the first letter and the rest of the word (slice method)
+	- Add letter to the end of the second remaining portion of the word (concat)
+	- Add "ay" to the end of the word (concat)
+	- Add the new Pig Latin word to the empty answer array (push method)
+- After iteration is complete, concatenate all the words in the answer array together, adding a space between each word (join method)
+- Return the new Pig Latin string as output

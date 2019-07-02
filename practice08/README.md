@@ -10,3 +10,14 @@ Create a function definition that achieves the output with the given input.
 - Optimization: How would you speed up the processing if you already encountered a value?
 
 <a href="" target="_blank">Solution Set</a>
+
+*Notes*
+- List of each letter's ASCII value
+- Loop through whole string and output ASCII value
+
+*Psuedocode*
+- Create an empty string to hold final return output
+- Iternate through each value in the string input
+- Find the ASCII value of the given value
+- Add the ASCII value to the return output
+- Once iteration is complete, return the return output string
