@@ -17,8 +17,14 @@ function fitWithinVal(arr, num){
   }
 }
 
-function getAllNamesShorterThan(){
-
+function getAllNamesShorterThan(arr, num){
+  var answer = [];
+  for (var i = 0; i < arr.length; i++) {
+    if ( arr[i].length < num) {
+      answer.push(arr[i]);
+    }
+  }
+  return answer;
 }
 
 function makeLabel(){
