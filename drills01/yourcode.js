@@ -27,6 +27,7 @@ function getAllNamesShorterThan(arr, num){
   return answer;
 }
 
-function makeLabel(){
-
+function makeLabel( info ){
+  var shippingLabel = info.greeting + ' ' + info.givenName + ' ' + info.familyName + '\n' + info['home address']['streetNumber'] + ' ' + info['home address']['streetName'] + '\n' + info['home address']['city'] + ', ' + info['home address']['state'] + ' ' + info['home address']['zip'];
+  return shippingLabel;
 }
