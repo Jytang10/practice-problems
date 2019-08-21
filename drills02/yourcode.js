@@ -18,8 +18,12 @@ function wordLengths(arr){
   return answerArr;
 }
 
-function getMinMaxMean(){
-
+function getMinMaxMean(arr){
+  const answer = {};
+  answer.min = Math.min(...arr);
+  answer.max = Math.max(...arr);
+  answer.mean = arr.reduce((acc, val) => {return acc + val}) / arr.length;
+  return answer;
 }
 
 function findMode(){
