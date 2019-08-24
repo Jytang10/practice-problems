@@ -26,6 +26,7 @@ function getMinMaxMean(arr){
   return answer;
 }
 
-function findMode(){
+function findMode(arr){
+
 
 }
