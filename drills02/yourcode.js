@@ -27,6 +27,20 @@ function getMinMaxMean(arr){
 }
 
 function findMode(arr){
+  var counter = {};
+  var mode = [];
+  var max = 0;
+  for (var i in arr) {
+      if (!(arr[i] in counter))
+          counter[arr[i]] = 0;
+      counter[arr[i]]++;
 
-
+      if (counter[arr[i]] == max) 
+          mode.push(arr[i]);
+      else if (counter[arr[i]] > max) {
+          max = counter[arr[i]];
+          mode = [arr[i]];
+      }
+  }
+  return mode[mode.length-1]; 
 }
