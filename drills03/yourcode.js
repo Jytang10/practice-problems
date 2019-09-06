@@ -15,7 +15,6 @@ function getPathParts(str){
   let firstSplit = str.split(':');
   let hostSplit = firstSplit[1].split('//');
   let thirdSplit = firstSplit[2].split('/');
-  console.log(thirdSplit);
   answerObj.protocol = firstSplit[0];
   answerObj.host = hostSplit[1];
   answerObj.port = parseInt(thirdSplit[0]);
@@ -29,8 +28,14 @@ function getPathParts(str){
   return answerObj;
 }
 
-function getCapitalCount(){
-
+function getCapitalCount(arr){
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i][0].toUpperCase() === arr[i][0]) {
+      count++
+    }
+  }
+  return count;
 }
 
 function correctCalcChecker(){
