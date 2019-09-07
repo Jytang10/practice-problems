@@ -67,6 +67,21 @@ function correctCalcChecker(arr){
   return answerArr;
 }
 
-function doMath(){
-
+function doMath(num1, op, num2){
+  let testResult;
+  switch(op) {
+    case '+':
+    testResult = num1 + num2
+    break;
+    case '-':
+    testResult = num1 - num2
+    break;
+    case '/':
+    testResult = num1 / num2
+    break;
+    case '*':
+    testResult = num1 * num2
+    break;
+  }
+  return testResult;
 }
