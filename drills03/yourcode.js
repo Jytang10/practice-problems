@@ -38,8 +38,33 @@ function getCapitalCount(arr){
   return count;
 }
 
-function correctCalcChecker(){
-
+function correctCalcChecker(arr){
+  let answerArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    let num1 = arr[i].num1;
+    let num2 = arr[i].num2;
+    let op = arr[i].op;
+    let result = arr[i].result;
+    let testResult;
+    switch(op) {
+      case '+':
+      testResult = num1 + num2
+      break;
+      case '-':
+      testResult = num1 - num2
+      break;
+      case '/':
+      testResult = num1 / num2
+      break;
+      case '*':
+      testResult = num1 * num2
+      break;
+    }
+    if (result === testResult) {
+      answerArr.push(arr[i])
+    }
+  }
+  return answerArr;
 }
 
 function doMath(){
