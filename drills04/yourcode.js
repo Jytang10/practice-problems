@@ -39,8 +39,12 @@ function changeElements(input){
   return result;
 }
 
-function appendTextToElement(){
-
+function appendTextToElement(element, textClass){
+  let res;
+  if (element.classList.contains( textClass )) {
+    res = element + textClass;
+  }
+  return res;
 }
 
 function addClass(){
