@@ -16,3 +16,13 @@ Build a function that takes one array and finds all other elements of the array 
 		3: [],
 		9: [3]
 	}
+
+*Notes*
+- Create empty object for answer
+- Iterate through each element in the input array
+- For each element (E1)
+	- Create an object key-value pair for the element
+	- Iterate again through all elements in the input array, skipping the currernt iterated element (E1)
+		- Check if the remainder of E1 and the current element is equal to any other element in the number array
+		- If equal, add to the array in that element's object value
+- Return the answer object
