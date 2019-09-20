@@ -1,12 +1,14 @@
-function numeric_toggles(num) {
-  let result = num;
-  for ( let i = 1; i < 9; i++) {
-    if ( i % 2 !== 0) {
-      console.log(result = result + (i+1));
-    } else {
-      console.log(result + i);
+function numeric_toggles(N) {
+  var test_array=[];
+  var inner2 = null;
+  for(var outer=N; outer<N+4; outer++)
+  {
+    for(var inner=outer; inner<outer+2; inner++){
+      inner2 = ((outer%2?-1:1) *outer) * inner;
+      test_array.push(inner2);
     }
   }
+  return test_array;
 }
 
-numeric_toggles(2);
+console.log(numeric_toggles(2));
