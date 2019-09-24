@@ -35,3 +35,18 @@ output = [
 ```
 So, for example, you would take the values from input_array[0][0], input_array[0][1], input_array[1,0], and intput_array[1,1], add them all together, divide by the total number of cells added, and then place that value back into all the cells sampled
 
+*Notes*
+- First need to use average_size to get all 4 values
+- Then find their average
+- Then replace original array with the new average value (or add to a new answer array)
+- Do the same for the rest of the values
+
+*Pseudocode*
+- First outer loop, loop through all values
+- Next inner loop, loop through arrays in input_array based on average_size
+	- Create variable to calculate/store average
+	- For each of the two arrays in that loop, find the value of the first ___ values based on average_size
+		- Add these values to the store average
+		- Calculate average value by dividing by average_size squared
+	- Loop again based on average_size, replace values
+	
