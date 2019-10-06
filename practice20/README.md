@@ -24,3 +24,9 @@ console.log(randomize_list(input_array)); //outputs
 - hint: Math.random() will give you a random fractional number between 0 and 1
 - hint: .pop() will allow you to take numbers off your source array as you pick them randomly
 - hint: Using pop will directly affect the length of the array
+
+Notes
+- Loop through arg array
+- Use Math.random() on the index to take random value and pop from array
+- Add array to new answer array
+- Return answer array
